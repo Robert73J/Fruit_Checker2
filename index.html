@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta =name = "viewport" content="width=device-widtth, initial-scale=1.0"/>
-    <title>Fruit Checker</title>
-  </head>
-  <body>
-    <h2>Fruit Checker</h2>
-    <input type="text" id="fruit" placeholder="Enter friut name"/>
-    <button onclick="checkFruit()">Check</button>
-    <p id="output"></p>
-    
-    <script src="fruit.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8" />  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <title>🍓 Fruit Checker App</title>  <link rel="manifest" href="manifest.json" />  <link rel="icon" href="icon.png" />  <style>    body {      font-family: 'Segoe UI', sans-serif;      background: linear-gradient(to bottom right, #f7ffe6, #e0f7fa);      display: flex;      flex-direction: column;      align-items: center;      justify-content: center;      min-height: 100vh;      margin: 0;      padding: 20px;      text-align: center;    }    h1 {      color: #2e7d32;      margin-bottom: 10px;    }    label {      font-size: 16px;    }    input {      padding: 10px;      font-size: 16px;      border: 2px solid #a5d6a7;      border-radius: 6px;      outline: none;      width: 250px;      text-align: center;    }    button {      margin-top: 10px;      padding: 10px 20px;      font-size: 16px;      background-color: #66bb6a;      color: white;      border: none;      border-radius: 6px;      cursor: pointer;    }    button:hover {      background-color: #4caf50;    }    #result {      margin-top: 20px;      font-size: 18px;      font-weight: bold;    }    #fruitImage {      margin-top: 15px;      max-width: 120px;    }    #language {      margin-top: 20px;      font-size: 14px;    }  </style></head><body>  <h1>🍓 Fruit Checker</h1>  <label id="inputLabel">Enter fruit name:</label><br />  <input type="text" id="fruitInput" placeholder="e.g. mango" />  <button onclick="checkFruit()">Check Fruit</button>  <div id="result"></div>  <img id="fruitImage" src="" alt="" style="display: none;" />  <div id="language">    🌍 Language:     <button onclick="setLanguage('en')">English</button>    <button onclick="setLanguage('sw')">Kiswahili</button>  </div>  <script src="fruit.js"></script>  <script>    if ('serviceWorker' in navigator) {      navigator.serviceWorker.register('service-worker.js');    }  </script></body></html>
